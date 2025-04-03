@@ -1,0 +1,34 @@
+/* Full-page Background Image */
+body {
+    background: url('backgrondwallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Overlay Effect to Improve Readability */
+.overlay {
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Adjust the form section */
+.form-container {
+    background: rgba(255, 255, 255, 0.2); /* Slight white transparency */
+    backdrop-filter: blur(10px);
+}
+
+/* Background Gradient Animation */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animated-bg {
+    background: linear-gradient(90deg, #ff7eb3, #ff758c, #ff9a44, #ffdb5c);
+    background-size: 300% 300%;
+    animation: gradientBG 6s infinite alternate ease-in-out;
+}
